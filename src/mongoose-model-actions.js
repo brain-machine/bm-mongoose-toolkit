@@ -102,7 +102,7 @@ module.exports.active = function (Model, property = 'active') {
   }
 }
 
-module.exports.inactive = function (Model, property = 'inactive') {
+module.exports.inactive = function (Model, property = 'active') {
   return (_id) => {
     return new Promise((resolve, reject) => {
       let value = {}
